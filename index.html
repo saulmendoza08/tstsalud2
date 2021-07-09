@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TST salud</title>
+    <link rel="shortcut icon" href="./assets/img/icons/favicon.svg">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    
+</head>
+<body>
+    <div class="container-fluid nav-azul" id="nav">
+        <nav class="navbar navbar-secundary bg-secundary">
+            <a class="navbar-brand" href="#">
+                <svg width="166" height="31" viewBox="0 0 166 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M49.5393 22.9274H53.6625V11.575H58.1189V8.29269H45.0621V11.575H49.5393V22.9274Z" fill="#48508A" class="letra"/>
+                    <path d="M64.7372 23.2201C69.0686 23.2201 71.1927 21.0458 71.1927 18.4952C71.1927 13.1012 62.9254 14.7738 62.9254 12.5368C62.9254 11.805 63.5502 11.2196 65.2786 11.2196C66.5489 11.2196 67.9233 11.596 69.3185 12.3486L70.5888 9.27531C69.1519 8.43904 67.1944 8 65.2994 8C60.968 8 58.8439 10.1325 58.8439 12.7458C58.8439 18.1816 67.132 16.4881 67.132 18.8088C67.132 19.5196 66.4656 20.0004 64.758 20.0004C63.0712 20.0004 61.2387 19.4151 59.9476 18.5579L58.594 21.6103C59.9684 22.572 62.3424 23.2201 64.7372 23.2201Z" fill="#48508A" class="letra"/>
+                    <path d="M75.9968 22.9274H80.12V11.575H84.5764V8.29269H71.5195V11.575H75.9968V22.9274Z" fill="#48508A" class="letra"/>
+                    <path d="M97.2955 23.2201C101.627 23.2201 103.751 21.0458 103.751 18.4952C103.751 13.1012 95.4838 14.7738 95.4838 12.5368C95.4838 11.805 96.1085 11.2196 97.8369 11.2196C99.1072 11.2196 100.482 11.596 101.877 12.3486L103.147 9.27531C101.71 8.43904 99.7528 8 97.8578 8C93.5263 8 91.4022 10.1325 91.4022 12.7458C91.4022 18.1816 99.6903 16.4881 99.6903 18.8088C99.6903 19.5196 99.0239 20.0004 97.3163 20.0004C95.6296 20.0004 93.797 19.4151 92.5059 18.5579L91.1523 21.6103C92.5267 22.572 94.9007 23.2201 97.2955 23.2201Z" fill="#48508A" class="letra"/>
+                    <path d="M116.568 22.9274H120.857L114.402 8.29269H110.341L103.906 22.9274H108.113L109.258 20.0841H115.422L116.568 22.9274ZM110.466 17.0317L112.34 12.3486L114.214 17.0317H110.466Z" fill="#48508A"class="letra"/>
+                    <path d="M122.026 22.9274H133.105V19.645H126.15V8.29269H122.026V22.9274Z" fill="#48508A" class="letra"/>
+                    <path d="M141.32 23.2201C145.631 23.2201 148.172 20.774 148.172 16.4045V8.29269H144.111V16.2791C144.111 18.7879 143.07 19.7914 141.362 19.7914C139.634 19.7914 138.592 18.7879 138.592 16.2791V8.29269H134.469V16.4045C134.469 20.774 137.01 23.2201 141.32 23.2201Z" fill="#48508A" class="letra"/>
+                    <path d="M150.965 22.9274H157.858C162.689 22.9274 166 20.105 166 15.61C166 11.1151 162.689 8.29269 157.858 8.29269H150.965V22.9274ZM155.088 19.6241V11.596H157.691C160.169 11.596 161.835 13.0803 161.835 15.61C161.835 18.1398 160.169 19.6241 157.691 19.6241H155.088Z" fill="#48508A" class="letra"/>
+                    <circle cx="15.5" cy="15.5" r="15.5" fill="#3E6AFE" class="letra"/>
+                    <path d="M14.9784 8.31264C15.7552 8.31264 16.3849 7.65868 16.3849 6.85197C16.3849 6.04526 15.7552 5.3913 14.9784 5.3913C14.2015 5.3913 13.5718 6.04526 13.5718 6.85197C13.5718 7.65868 14.2015 8.31264 14.9784 8.31264Z" fill="white" class="letra-icon"/>
+                    <path d="M13.8967 10.3685C13.8967 10.3685 36.0502 14.1243 13.8967 20.5844C13.8967 20.5844 25.5778 15.2755 13.8967 10.3685Z" fill="white" class="letra-icon"/>
+                    <path d="M15.8442 15.0654C15.8442 15.0654 -3.63141 18.9127 15.8442 25.5162C15.8442 25.5162 5.57539 20.0949 15.8442 15.0654Z" fill="white" class="letra-icon"/>
+                    </svg>
+                    
+              
+            </a>
+    
+            
+    
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link nav__menu" href="#"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__menu" href="#"> Productos </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__menu" href="#"> Sobre nosotros </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__menu" href="#"> Contacto </a>
+              </li>
+              <div class="nav__ingreso">
+                <li class="nav-item">
+                  <a class="nav-link nav__menu" href="#" id="nav-btn-1"> Ingresar </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav__menu" href="#"> Registrarse </a>
+                </li>
+              </div>
+              
+            </ul>
+        </nav><!-- fin de nav -->
+    
+    </div>
+
+    <div class="container-fluid" id="section1">
+        <div class="container">
+            <div class="row">
+                <div class="col-6" >
+                    <div class="swipe"><h1 >El sistema que usan los que más saben</h1></div>
+                    
+                    <p class="fdown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat in tellus posuere, nec blandit.</p>
+                    <button class="fdown-delay">Empezá Ya</button>
+                    <ul class="fdown-delay2">
+                        <li>Soluciones con garantia de reembolso</li>
+                        <li>Acceso desde cualquier dispositivo</li>
+                    </ul>
+                </div> 
+                <div class="col-6">
+                    <div class="video-side">
+                        <img src="./assets/img/fondos/Group.svg" alt="">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="section2">
+        <div class="container">
+           <div class="title-div">
+            <h2>Promociones validas</h2>
+           </div>
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./assets/img/publ/pbl1.jpg" alt="" srcset=""></div>
+                  <div class="swiper-slide"><img src="./assets/img/publ/pbl2.jpg" alt="" srcset=""></div>
+                  <div class="swiper-slide"><img src="./assets/img/publ/pbl3.jpg" alt="" srcset=""></div>
+                  <div class="swiper-slide"><img src="./assets/img/publ/pbl3.jpg" alt="" srcset=""></div>
+                  
+                </div>
+                
+              </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="section3">
+        <div class="container">
+            <div class="title-div">
+                <h2>Nuestras farmacias asociadas</h2>
+            </div>
+            <div class="row " id="first-row">
+                <div class="col-sm-2">
+                  <div class="card">
+                    <img src="./assets/img/publ/sponsor/Rectangle 5.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="#" class="title-text">Farmacity</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                      <img src="./assets/img/publ/sponsor/look.svg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <a href="#" class="title-text">Look</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="card">
+                      <img src="./assets/img/publ/sponsor/perfumirie.svg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <a href="#" class="title-text">La Perfumerie</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="card">
+                      <img src="./assets/img/publ/sponsor/gentech.svg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <a href="#" class="title-text">Gentech</a>
+                      </div>
+                    </div>
+                  </div>
+                
+                  
+              </div>
+              <div class="row">
+                <div class="col-sm-2">
+                  <div class="card">
+                    <img src="./assets/img/publ/sponsor/carrefour.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="#" class="title-text">Carrefour</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                      <img src="./assets/img/publ/sponsor/dia.svg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <a href="#" class="title-text">Dia</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="card">
+                      <img src="./assets/img/publ/sponsor/Select.svg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <a href="#" class="title-text">Select</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="card">
+                      <img src="./assets/img/publ/sponsor/24kioscos.svg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <a href="#" class="title-text">24 Kioscos</a>
+                      </div>
+                    </div>
+                  </div>
+                
+                  
+              </div>
+             
+              <div class="show-card">
+                <div class="row">
+                    <div class="col-sm-2">
+                      <div class="card">
+                        <img src="./assets/img/publ/sponsor/carrefour.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="#" class="title-text">Carrefour</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                          <img src="./assets/img/publ/sponsor/dia.svg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <a href="#" class="title-text">Dia</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="card">
+                          <img src="./assets/img/publ/sponsor/Select.svg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <a href="#" class="title-text">Select</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="card">
+                          <img src="./assets/img/publ/sponsor/24kioscos.svg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <a href="#" class="title-text">24 Kioscos</a>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-2">
+                      <div class="card">
+                        <img src="./assets/img/publ/sponsor/carrefour.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="#" class="title-text">Carrefour</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                          <img src="./assets/img/publ/sponsor/dia.svg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <a href="#" class="title-text">Dia</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="card">
+                          <img src="./assets/img/publ/sponsor/Select.svg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <a href="#" class="title-text">Select</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="card">
+                          <img src="./assets/img/publ/sponsor/24kioscos.svg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <a href="#" class="title-text">24 Kioscos</a>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-2">
+                      <div class="card">
+                        <img src="./assets/img/publ/sponsor/carrefour.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="#" class="title-text">Carrefour</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                          <img src="./assets/img/publ/sponsor/dia.svg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <a href="#" class="title-text">Dia</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="card">
+                          <img src="./assets/img/publ/sponsor/Select.svg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <a href="#" class="title-text">Select</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="card">
+                          <img src="./assets/img/publ/sponsor/24kioscos.svg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <a href="#" class="title-text">24 Kioscos</a>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      
+                  </div>
+                  
+              </div>
+              <div class="btn-container">
+                  <button id="btn-show">Mostrar más</button>
+             </div>
+              
+        </div>
+    </div>
+    <div class="container-fluid" id="section4">
+        <div class="container">
+          <div class="row" id="first-section4">
+            <div class="col-6" id="col-text">
+              <h2>Descubrí cómo funciona nuestro sistema</h2>
+              <p>Somos la empresa numero uno del noroeste argentino y este video te lo explica de manera rápida, facil e intuitiva.</p>
+            </div>
+            <div class="col-6">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/3bcNDLfIKq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <div class="card">
+                
+                <div class="card-body">
+                  <div class="img-container">
+                    <img src="./assets/img/icons/registro.svg" alt="register icon">
+                  </div>
+                  <h5 class="card-title">Te registras</h5>
+                  <p class="card-text" >Lorem ipsum dolor sit amet, consectetur adipis cing elit.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card">
+                
+                <div class="card-body">
+                  <div class="img-container">
+                    <img src="./assets/img/icons/validacion.svg" alt="register icon">
+                  </div>
+                  <h5 class="card-title">Validamos tu cuenta</h5>
+                  <p class="card-text" >Lorem ipsum dolor sit amet, consectetur adipis cing elit.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card">
+                
+                <div class="card-body">
+                  <div class="img-container">
+                    <img src="./assets/img/icons/ingresar.svg" alt="register icon">
+                  </div>
+                  <h5 class="card-title">Ingresas</h5>
+                  <p class="card-text" >Lorem ipsum dolor sit amet, consectetur adipis cing elit.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card">
+                
+                <div class="card-body">
+                  <div class="img-container">
+                    <img src="./assets/img/icons/gestion.svg" alt="register icon">
+                  </div>
+                  <h5 class="card-title">Ya podés gestionar</h5>
+                  <p class="card-text" >Lorem ipsum dolor sit amet, consectetur adipis cing elit.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+           
+        </div>
+    </div>
+    <div class="container-fluid" id="section5">
+      <div class="title-div">
+        <h2>Por que nuestros sistema es el mejor</h2>
+    </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h2>Adecuados a la legislación vigente</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</p>
+            </div>
+            <div class="col-6">
+              <img src="./assets/img/caracteristicas/legislacion.svg" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <h2>Mejora y optimiza el proceso de atención</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</p>
+            </div>
+            <div class="col-6">
+              <img src="./assets/img/caracteristicas/atencion.svg" alt="">
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <h2>Gestión de agenda de turnos</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</p>
+            </div>
+            <div class="col-6">
+              <img src="./assets/img/caracteristicas/agenda.svg" alt="">
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <h2>Acceso libre de programas mediante SaaS</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</p>
+            </div>
+            <div class="col-6">
+              <img src="./assets/img/caracteristicas/acceso.svg" alt="">
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <h2>Acceso a historia clinica electrónica de pacientes</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</p>
+            </div>
+            <div class="col-6">
+              <img src="./assets/img/caracteristicas/hclinica.svg" alt="">
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <h2>Posibilidad de hacer telemedicina</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</p>
+            </div>
+            <div class="col-6">
+              <img src="./assets/img/caracteristicas/telemedicina.svg" alt="">
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <h2>Identificación y registro inequivoco de pacientes</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</p>
+            </div>
+            <div class="col-6">
+              <img src="./assets/img/caracteristicas/identificacion.svg" alt="">
+            </div>
+            
+          </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="section6">
+        <div class="container"></div>
+    </div>
+    <div class="container-fluid" id="section7">
+        <div class="container"></div>
+    </div>
+    <div class="container-fluid" id="section8">
+        <div class="container"></div>
+    </div>
+    <div class="container-fluid" id="section9">
+        <div class="container"></div>
+    </div>
+    <div class="container-fluid" id="section10">
+        <div class="container"></div>
+    </div>
+    <div class="container-fluid" id="section11">
+        <div class="container"></div>
+    </div>
+    <div class="container-fluid" id="section12">
+        <div class="container"></div>
+    </div>
+    <div class="container-fluid" id="section13">
+        <div class="container"></div>
+    </div>
+    
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="./assets/app.js" type="module"></script>
+
+
+</html>
