@@ -447,29 +447,57 @@
         </div>
     </div>
     <div class="container-fluid" id="section6">
-        <div class="container"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6" id="form-text">
+              <h2>¿Querés más información?</h2>
+              <p>Escribinos y sacate las dudas.</p>
+              <form action="">
+                <label for="">Nombre</label>
+                <input type="text" name="nombre" title="el nombre debe ser caracteresde letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                <label for="">Email</label>
+                <input type="email" name="email" title="el email debe ser uno valido" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                <label for="">Mensaje</label>
+                <textarea name="text" cols="30" rows="5" data-pattern="^.{50,255}$" title="el texto debe tener almenos 50 hasta 255"required></textarea>
+                <input type="submit" value="enviar">
+              </form>
+
+            </div>
+            <div class="col-6" id="fondo-form">
+              <img src="./assets/img/fondos/form.svg" alt="" srcset="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img src="./assets/img/icons/phrase.svg" alt="">
+              <p>“Cada persona que vence en cualquier empresa debe estar dispuesta a quemar sus naves y eliminar todas las posibilidades de dar marcha atrás. Sólo así puede tener la seguridad de mantener ese estado mental conocido como deseo ardiente de ganar, esencial para el éxito.”</p>
+              <span>Napoleón Hill</span>
+            </div>
+          </div>
+        </div>
     </div>
-    <div class="container-fluid" id="section7">
-        <div class="container"></div>
-    </div>
-    <div class="container-fluid" id="section8">
-        <div class="container"></div>
-    </div>
-    <div class="container-fluid" id="section9">
-        <div class="container"></div>
-    </div>
-    <div class="container-fluid" id="section10">
-        <div class="container"></div>
-    </div>
-    <div class="container-fluid" id="section11">
-        <div class="container"></div>
-    </div>
-    <div class="container-fluid" id="section12">
-        <div class="container"></div>
-    </div>
-    <div class="container-fluid" id="section13">
-        <div class="container"></div>
-    </div>
+    <footer>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="box-footer">
+                <img src="./assets/img/icons/logo-footer.svg" alt="logo tst footer">
+                <p>El sistema que usan los que más saben</p>
+              </div>
+            </div>
+            <div class="col">
+              <p>Copyright © 2021. Todos los derechos reservados.</p>
+            </div>
+            <div class="col">
+              <a href=""><img src="./assets/img/icons/Facebook.svg" alt="facebook"></a>
+              <a href=""><img src="./assets/img/icons/Twitter.svg" alt="twitter"></a>
+              <a href=""><img src="./assets/img/icons/Instagram.svg" alt="instagram"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

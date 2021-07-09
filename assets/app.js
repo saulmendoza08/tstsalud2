@@ -1,3 +1,4 @@
+import firma from "./modules/firma.js";
 import navScroll from "./modules/nav.js";
 import showCard from "./modules/show_card.js";
 
@@ -7,8 +8,13 @@ d.addEventListener('DOMContentLoaded',e=>{
 
     navScroll("nav");
     showCard();
+    firma()
 
 })
+
+
+
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 2.5,
         spaceBetween: 30,

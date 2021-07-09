@@ -1,5 +1,6 @@
 /*fuentes importables de robo google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
     margin:0;
@@ -21,6 +22,10 @@
     --fondo-azul-select:#2e50be;
     --gris-claro:#8794BA;
     --show:30rem;
+    --oscuro: #070A34;
+    --gris-muy-claro:#DEE6FD;
+    --celeste-claro:#A4B9FF;
+
     /* la varable show esta definida en show_caard.js */
 
 }
@@ -472,7 +477,7 @@ transition:.5s
 }
 
 #section5{
-    
+    padding-bottom:2rem;
     
 }
 #section5> .container{
@@ -485,6 +490,9 @@ transition:.5s
     height:30rem;
     background:var(--fondo-claro);
     
+}
+#section5 img{
+    width:80%;
 }
 #section5> .container .row:nth-child(2n){
     flex-direction: row-reverse;
@@ -510,4 +518,133 @@ transition:.5s
     color: var(--gris-claro);
     font-weight: 500;
     line-height:150%;
+}
+
+
+/* section6 */
+
+#section6 > .container{
+    height:70rem;
+    
+}
+
+#section6 > .container >.row:first-child #fondo-form img{
+    width:100%;
+    height:36rem;
+    
+
+    
+}
+#section6 > .container >.row:first-child #form-text{
+   
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+}
+#section6 > .container >.row:first-child #form-text h2{
+    font-size: 2rem;
+    color: var(--fuente1);
+    font-weight: 700;
+}
+#section6 > .container >.row:first-child #form-text p{
+    color: var(--fuente1);
+    font-size: 1rem;
+    font-weight:500;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#section6 > .container >.row:first-child #form-text form{
+    display: flex;
+    flex-direction:column;
+    width:25rem;
+}
+#section6 > .container >.row:first-child #form-text form label{
+    padding-bottom: .4rem;
+
+}
+#section6 > .container >.row:first-child #form-text form input{
+    padding: .5rem;
+    border-radius:.9rem;
+}
+#section6 > .container >.row:first-child #form-text form textarea{
+    border-radius:2rem;
+    resize: none;
+    padding-left: 1rem;
+    outline: none;
+}
+#section6 > .container >.row:first-child #form-text form input,textarea{
+    margin-bottom: 1rem;
+    
+    border: 1px solid var(--celeste-claro);
+}
+#section6 input[type="submit"]{
+    background-color:var(--fondo-azul);
+    color: var(--fondo-blanco);
+    font-weight: 500;
+}
+#section6 input[type="submit"]:hover{
+    background-color: var(--fondo-azul-select);
+    transition:.3s;
+}
+#section6 .row:nth-child(2){
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+}
+#section6 .row:nth-child(2) .col {
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+   
+    height:15rem;
+    
+}
+#section6 .row:nth-child(2) .col p {
+    font-weight: 500;
+    font-size:1.2rem;
+    color:var(--fuente1);
+    padding-left: 1rem;
+    width:90%
+}
+#section6 .row:nth-child(2) .col img{
+    height:1.5rem;
+    width:1.5rem;
+   
+    margin-bottom: 2rem;
+}
+#section6 .row:nth-child(2) .col span{
+    margin-left:1rem;
+    color: var(--gris-claro);
+    font-size: 1.1rem;
+}
+
+
+footer .container-fluid{
+    height:25rem;
+    background:var(--oscuro);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+footer .container-fluid .row> .col .box-footer{
+    margin-top:5rem;
+    width:16rem;
+    font-size:.9rem;
+    line-height:22px;
+    
+}
+footer .container-fluid .row> .col:nth-child(2){
+    font-size:.9rem;
+    color: var(--gris-muy-claro);
+    padding-top: 18rem;
+}
+
+footer .container-fluid .row> .col:nth-child(3){
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+footer .container-fluid .row> .col:nth-child(3) img{
+    margin-right: 2rem;
 }
