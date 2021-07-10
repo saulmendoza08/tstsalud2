@@ -32,6 +32,9 @@
     /* la varable show esta definida en show_caard.js */
 
 }
+html{
+    scroll-behavior: smooth;
+}
 #nav{
     background-color:var(--fondo-blanco);
     position:fixed;
@@ -89,6 +92,9 @@ body{
    
     
 }
+.nav-link{
+    color:var(--fondo-azul)
+}
 .navbar{
     margin: auto;
     max-width: 98%;
@@ -108,6 +114,10 @@ font-weight: 600;
    
    
 }
+.nav__ingreso .nav-link{
+    padding:.5rem 1.5rem;
+}
+
 .nav__ingreso li:first-child:hover{
     background-color: var(--fondo-azul);
     transition:.5s;
@@ -194,6 +204,7 @@ font-weight: 600;
 #section1 .row div:first-child span {
     color:var(--gris-azulado);
     font-weight:500;
+    font-size:1.2rem;
     
 }
 #section1 .row div:first-child h1,p,ul{
@@ -224,11 +235,12 @@ font-weight: 600;
     filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1));
     margin-bottom: 1rem;
     font-weight:700;
-    filter: brightness(100%);
+   
     transition:.3s;
 }
 #section1 .row div:first-child button:hover{
-    filter: brightness(80%);
+   background-color: var(--fondo-azul);
+   color: var(--fondo-blanco);
     transition:.4s;
 }
 #section1 .row div:first-child ul li {
@@ -347,6 +359,9 @@ font-weight: 600;
     text-align:center;
     padding:2rem 0;
    }
+   #title2{
+       padding-top: 3rem;
+   }
    .title-div.title-blue h2{
     
     color:var(--fondo-azul);
@@ -458,7 +473,7 @@ font-weight: 600;
     margin: auto;
 }
 #section4>.container>.row:nth-child(2){
-    height:30rem;
+    
     width:95%;
     margin: auto;
 }
@@ -498,6 +513,7 @@ font-weight: 600;
     border: none;
     border-radius: 1rem;
     box-shadow: 0px 4px 20px rgba(62, 106, 254, 0.1);
+    min-height:17rem;
 }
 #section4 .card .img-container{
     height:5rem;
@@ -527,7 +543,7 @@ font-weight: 600;
 }
 
 #section5> .container .row{
-    height:30rem;
+    height:35rem;
     background:var(--fondo-claro);
     
 }
@@ -576,7 +592,7 @@ font-weight: 600;
     height:36rem;
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
-
+    height: 100%;
     
 }
 #section6 > .container >.row:first-child #form-text{
@@ -602,11 +618,11 @@ font-weight: 600;
 #section6 > .container >.row:first-child #form-text form{
     display: flex;
     flex-direction:column;
-    width:25rem;
+    width:28rem;
 }
 #section6 > .container >.row:first-child #form-text form label{
     padding-bottom: .4rem;
-
+    font-weight: 500;
 }
 #section6 > .container >.row:first-child #form-text form input{
     padding: .5rem;
@@ -622,6 +638,9 @@ font-weight: 600;
     margin-bottom: 1rem;
     border: none;
     background-color: var(--bg-input);
+}
+#section6 > .container >.row:first-child #form-text form input,textarea{
+    outline-color: var(--gris-claro-azulado);
 }
 #section6 .container >.row:first-child #form-text form input[type="submit"]{
     background-color:var(--fondo-azul);
@@ -644,9 +663,13 @@ font-weight: 600;
     height:15rem;
     
 }
+#section6 #full-form{
+    box-shadow: 0px 4px 20px rgba(62, 106, 254, 0.1);
+    border-radius:2rem;
+}
 #section6 .row:nth-child(2) .col p {
     font-weight: 500;
-    font-size:1.2rem;
+    font-size:1.4rem;
     color:var(--fuente1);
     padding-left: 1rem;
     width:90%
@@ -660,7 +683,7 @@ font-weight: 600;
 #section6 .row:nth-child(2) .col span{
     margin-left:1rem;
     color: var(--gris-claro);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 
@@ -691,4 +714,11 @@ footer .container-fluid .row> .col:nth-child(3){
 }
 footer .container-fluid .row> .col:nth-child(3) img{
     margin-right: 2rem;
+}
+.swiper-slide{
+    height:13rem;
+}
+.swiper-slide img{
+    height:100%;
+    width:100%;
 }

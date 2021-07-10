@@ -16,7 +16,7 @@ d.addEventListener('DOMContentLoaded',e=>{
 
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 2.5,
+    slidesPerView: 2.3,
         spaceBetween: 30,
         slidesPerGroup: 1,
         loop: true,
