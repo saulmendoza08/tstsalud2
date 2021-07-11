@@ -16,7 +16,7 @@ d.addEventListener('DOMContentLoaded',e=>{
 
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 2.3,
+    slidesPerView: 2.5,
         spaceBetween: 30,
         slidesPerGroup: 1,
         loop: true,
@@ -24,5 +24,19 @@ var swiper = new Swiper(".mySwiper", {
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1.1,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 1.1,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+          },
         },speed:2000
       });
