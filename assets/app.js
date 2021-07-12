@@ -1,4 +1,6 @@
+import aside from "./modules/aside.js";
 import firma from "./modules/firma.js";
+import hamburguer from "./modules/hamburguer.js";
 import navScroll from "./modules/nav.js";
 import showCard from "./modules/show_card.js";
 
@@ -8,7 +10,9 @@ d.addEventListener('DOMContentLoaded',e=>{
 
     navScroll("nav");
     showCard();
-    firma()
+    firma();
+    aside();
+    hamburguer();
 
 })
 
@@ -16,7 +20,7 @@ d.addEventListener('DOMContentLoaded',e=>{
 
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 2.5,
+    slidesPerView: 1.1,
         spaceBetween: 30,
         slidesPerGroup: 1,
         loop: true,
@@ -35,7 +39,7 @@ var swiper = new Swiper(".mySwiper", {
             spaceBetween: 30,
           },
           1024: {
-            slidesPerView: 1,
+            slidesPerView: 2.5,
             spaceBetween: 50,
           },
         },speed:2000
