@@ -1,6 +1,7 @@
 import aside from "./modules/aside.js";
 import firma from "./modules/firma.js";
 import hamburguer from "./modules/hamburguer.js";
+import loading from "./modules/load.js";
 import navScroll from "./modules/nav.js";
 import showCard from "./modules/show_card.js";
 
@@ -13,10 +14,11 @@ d.addEventListener('DOMContentLoaded',e=>{
     firma();
     aside();
     hamburguer();
+  
 
 })
 
-
+loading();
 
 
 var swiper = new Swiper(".mySwiper", {

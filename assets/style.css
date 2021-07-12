@@ -802,6 +802,86 @@ aside .nav__ingreso li:nth-child(2){
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
     background:var(--fondo-azul)
 }
+body.loading{
+    overflow: hidden;
+}
+body.loading .load{
+    top:0;
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:#070A34;
+    z-index: 9999;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    opacity:1;
+    visibility:visible;
+    
+}
+
+body .load{
+    top:0;
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:#11151B;
+    z-index: 9999;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    opacity:0;
+    visibility:hidden;
+    transition: .5s;
+}
+/* animacion de load */
+.load #circle{
+    fill: transparent;
+    animation:fi .5s ease-in-out 3.5s forwards;
+}
+.load .blue{
+    fill: transparent;
+    animation:blu .5s ease-in-out 3.5s forwards;
+
+}
+
+.load #var{
+    transform: translateY(112px);
+}
+.load #var-charge{
+    
+    animation: wia 4s ease-in-out forwards;
+}
+@keyframes wia{
+    from{
+        width:0px
+    }
+    to{
+       width:197px
+    }
+}
+@keyframes blu{
+    from{
+        stroke:white;
+        fill: transparent;
+    }
+    to{
+        stroke:#3E6AFE;
+        fill:#3E6AFE;
+    }
+}
+@keyframes fi{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill:white;
+    }
+}
+
+
+
+/* animacion de load */
 @media (min-width: 1024px) {
     .swiper-slide{
         height:11rem;
