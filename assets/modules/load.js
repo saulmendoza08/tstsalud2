@@ -2,15 +2,11 @@ const d = document,
 ls=window.localStorage;
 
 export default function loading(){
-    d.addEventListener('DOMContentLoaded',e=>{
-        if(ls.getItem('loaded')===null){loadd();ls.setItem('loaded',JSON.stringify({time: Date.now()}))};
-        if((Date.now()-JSON.parse(ls.getItem('loaded')).time)>20000){loadd();ls.setItem('loaded',JSON.stringify({time: Date.now()}))};
-        
-        
-    
-    }
-    )
-   function loadd(){
+    if(ls.getItem('loaded')===null){loadd();ls.setItem('loaded',JSON.stringify({time: Date.now()}))};
+    if((Date.now()-JSON.parse(ls.getItem('loaded')).time)>20000){loadd();ls.setItem('loaded',JSON.stringify({time: Date.now()}))};
+   
+}
+function loadd(){
     d.body.classList.add("loading");
     const load = d.querySelector(".load");
     load.innerHTML=`<svg width="197" height="118" viewBox="0 0 197 118" fill="none" xmlns="http://www.w3.org/2000/svg" id="svg">
@@ -65,4 +61,3 @@ export default function loading(){
      
  }, 4100);
    }
-}
