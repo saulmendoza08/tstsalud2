@@ -3,7 +3,7 @@ ls=window.localStorage;
 
 export default function loading(){
     if(ls.getItem('loaded')===null){loadd();ls.setItem('loaded',JSON.stringify({time: Date.now()}))};
-    if((Date.now()-JSON.parse(ls.getItem('loaded')).time)>20000){loadd();ls.setItem('loaded',JSON.stringify({time: Date.now()}))};
+    if((Date.now()-JSON.parse(ls.getItem('loaded')).time)>86400000){loadd();ls.setItem('loaded',JSON.stringify({time: Date.now()}))};
    
 }
 function loadd(){
