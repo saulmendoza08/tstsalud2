@@ -50,10 +50,10 @@ body{
 }
 /* section 1 */
 #section1{
-    height:80vh;
+    height:95vh;
     width:100%;
     background:var(--fondo-blanco);
-    max-height: 50rem;
+    max-height: 60rem;
     padding-top: 3rem;
     
 }
@@ -77,7 +77,7 @@ body{
 }
 .video-side>img{
     margin-top:5rem;
-    height: 80%;
+   
     width: 100%;
 }
 .video-button{
@@ -114,7 +114,7 @@ body{
     margin-left: 2rem;
 }
 .nav__ingreso li{
-   border:2px solid var(--fondo-azul);
+   border:1px solid var(--fondo-azul);
    border-radius:2rem;
 font-weight: 600;
    
@@ -210,7 +210,10 @@ font-weight: 600;
      color:var(--fondo-azul)
  }
 /* nav azul */
-
+.navbar-brand svg{
+    height: 100%;
+    width: 12rem;
+}
 #section1 .row div:first-child span {
     color:var(--gris-azulado);
     font-weight:500;
@@ -223,9 +226,9 @@ font-weight: 600;
     }
 #section1 .row div:first-child h1{
     font-weight: 800;
-    font-size:3rem;
-    width:80%;
-    color: var(--fondo-azul);
+    font-size:3.6rem;
+    width:100%;
+    color: var(--fuente1);
     padding-top: .5rem;
    
 }
@@ -262,7 +265,7 @@ font-weight: 600;
 
 }
 #section1 .row div:first-child ul li::after{
-    content:url(./img/icons/arrow-left.svg);
+    content:url(./img/icons/arrow-left2.svg);
     position:absolute;
     left:-1.5rem;
 
@@ -371,6 +374,11 @@ font-weight: 600;
    }
    #title2{
        padding-top: 3rem;
+   }
+   #section5 #title2 img{
+       height:4rem;
+       width:4rem;
+       width:100%;
    }
    .title-div.title-blue h2{
     
@@ -1016,7 +1024,7 @@ body .load{
 }
 @media (max-width: 575px){
     .video-side>img{
-        height:85%;
+        
         margin-top:2rem;
     }
     .navbar-brand{
