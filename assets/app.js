@@ -3,6 +3,7 @@ import firma from "./modules/firma.js";
 import hamburguer from "./modules/hamburguer.js";
 import loading from "./modules/load.js";
 import navScroll from "./modules/nav.js";
+import scrollMagic from "./modules/scrollMagic.js";
 import showCard from "./modules/show_card.js";
 
 const d = document;
@@ -14,6 +15,7 @@ d.addEventListener('DOMContentLoaded',e=>{
     firma();
     aside();
     hamburguer();
+    scrollMagic();
   
 
 })
