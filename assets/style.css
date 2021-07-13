@@ -28,6 +28,7 @@
     --gris-azulado:#6C74AF;
     --gris-claro-azulado:#D3DDFF;
     --bg-input:#EFF7FF;
+    --semi-dark:#11151B;
 
     /* la varable show esta definida en show_caard.js */
 
@@ -562,7 +563,8 @@ font-weight: 600;
 
 #section5> .container .row{
     height:35rem;
-    background:var(--fondo-claro);
+  
+    background: var(--fondo-blanco);
     
 }
 #section5 img{
@@ -570,7 +572,8 @@ font-weight: 600;
 }
 #section5> .container .row:nth-child(2n){
     flex-direction: row-reverse;
-    background: var(--fondo-blanco);
+    
+    background:var(--fondo-claro);
 
 }
 #section5> .container .row>*{
@@ -707,7 +710,7 @@ font-weight: 600;
 
 footer .container-fluid{
     height:25rem;
-    background:var(--oscuro);
+    background:var(--semi-dark);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
@@ -818,7 +821,7 @@ body.loading .load{
     position:fixed;
     width:100%;
     height:100vh;
-    background:#11151B;
+    background:var(--semi-dark);
     z-index: 9999;
     display:flex;
     align-items: center;
@@ -833,7 +836,7 @@ body .load{
     position:fixed;
     width:100%;
     height:100vh;
-    background:#11151B;
+    background:var(--semi-dark);
     z-index: 9999;
     display:flex;
     align-items: center;
@@ -1023,6 +1026,9 @@ body .load{
     
 }
 @media (max-width: 575px){
+    #section1 .row div:first-child h1{
+        font-size: 3rem;
+    }
     .video-side>img{
         
         margin-top:2rem;
@@ -1036,7 +1042,7 @@ body .load{
         height: 100%;
     }
     aside .nav__menu{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .swiper-slide{
         height:8rem;
@@ -1078,6 +1084,7 @@ body .load{
         width:16rem;
     }
 }
+
 @media only screen and (max-height : 768px){
     #section1{
         height:100%;
