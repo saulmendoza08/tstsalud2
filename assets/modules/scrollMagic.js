@@ -1,7 +1,7 @@
 const d  = document;
 
 export default function scrollMagic(){
-   if(matchMedia('(min-width:768px)').matches){
+   if(matchMedia('(min-width:576px)').matches){
     const elements = document.querySelectorAll('[data-anim]');
 
 
